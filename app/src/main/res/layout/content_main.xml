@@ -24,7 +24,8 @@
         android:layout_marginLeft="10dp"
         android:id="@+id/welcomeText"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimaryText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +35,8 @@
         android:id="@+id/enterYourNameText"
         android:layout_below="@+id/welcomeText"
         android:layout_alignStart="@+id/welcomeText"
-        android:textSize="@dimen/enterNameTextSize" />
+        android:textSize="@dimen/enterNameTextSize"
+        android:textColor="@color/colorSecondaryText" />
 
     <EditText
         android:layout_width="wrap_content"

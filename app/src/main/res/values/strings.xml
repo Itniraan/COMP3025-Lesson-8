@@ -7,4 +7,5 @@
     <string name="enterYourName">Enter Your Name</string>
     <string name="okButtonText">OK</string>
     <string name="cancelButtonText">CANCEL</string>
+    <string name="title_activity_info">InfoActivity</string>
 </resources>
