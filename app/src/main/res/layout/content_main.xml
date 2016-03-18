@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="ca.blake.georgian.comp3025_lesson8_3.MainActivity"
+    android:id="@+id/demoLinearLayout"
+    android:visibility="visible">
+
+    <TextView
+        android:text="@string/welcomeString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/appText"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/welcomeText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enterName"
+        android:id="@+id/enterYourNameText"
+        android:layout_below="@+id/welcomeText"
+        android:layout_alignStart="@+id/welcomeText"
+        android:textSize="@dimen/enterNameTextSize" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterYourNameEditText"
+        android:layout_below="@+id/enterYourNameText"
+        android:layout_alignStart="@+id/enterYourNameText"
+        android:text="@string/enterYourName"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/enterYourNameEditText"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearButtonLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/okButtonText"
+            android:id="@+id/okButton"
+            android:textSize="@dimen/buttonTextSize"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spacerView"
+            android:width="50dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelButtonText"
+            android:id="@+id/cancelButton"
+            android:textSize="@dimen/buttonTextSize"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">2 Panel Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="appTitle">2 Panel Demo</string>
+    <string name="welcomeString">Welcome!!</string>
+    <string name="enterName">Enter Your Name:</string>
+    <string name="enterYourName">Enter Your Name</string>
+    <string name="okButtonText">OK</string>
+    <string name="cancelButtonText">CANCEL</string>
+</resources>
